@@ -1,0 +1,96 @@
+Time : Mon Mar 10 22:05:45 IST 2025
+USER DETAILS: osherarb:x:1000:1000:,,,:/home/osherarb:/bin/bash
+REPO: /home/osherarb/LINUX_Course_Project
+GithubUrl: https://github.com/Matanahmany/PROJECT_COURSE_LINUX.git
+VERSIONID: "24.04"
+---------------------------------------------
+{ Installing tree package and listing all files in recursive mode }
+.
+├── BACKUPS
+├── CODE
+│   ├── plant.py
+│   └── py1.py
+├── DATA
+│   ├── FIle_1.txt
+│   ├── File_2.txt
+│   ├── img1.jpg
+│   ├── img2.jpg
+│   ├── img3.jpg
+│   └── plants.csv
+├── DOWNLOADS
+│   └── LINUX_COURSE_WORK-downloads
+│       ├── FIle_1.txt
+│       ├── File_2.txt
+│       ├── img1.jpg
+│       ├── img2.jpg
+│       ├── img3.jpg
+│       ├── plant.py
+│       ├── plants.csv
+│       └── py1.py
+└── Work
+    ├── Q1
+    │   └── q1_output.txt
+    ├── Q2
+    ├── Q3
+    ├── Q4
+    └── Q5
+
+12 directories, 17 files
+---------------------------------------------
+List of all my .sh files under user folder recursively
+/home/osherarb/BashDockerApp/convert_temp.sh
+/home/osherarb/.vscode-server/data/User/History/24c783ff/rjhH.sh
+/home/osherarb/.vscode-server/data/User/History/24c783ff/k4Mu.sh
+/home/osherarb/.vscode-server/data/User/History/142c6a44/V6lN.sh
+/home/osherarb/.vscode-server/data/User/History/142c6a44/mzVO.sh
+/home/osherarb/.vscode-server/data/User/History/-64107b18/RgWB.sh
+/home/osherarb/.vscode-server/data/User/History/-1665d01c/FKjh.sh
+/home/osherarb/.vscode-server/data/User/History/-1557a855/rurM.sh
+/home/osherarb/.vscode-server/data/User/History/62072298/8BLV.sh
+/home/osherarb/.vscode-server/data/User/History/424aae17/8RxG.sh
+/home/osherarb/.vscode-server/data/User/History/629e7427/26yD.sh
+/home/osherarb/.vscode-server/data/User/History/-65254330/MYPi.sh
+/home/osherarb/.vscode-server/data/User/History/20c55fc5/84wV.sh
+/home/osherarb/.vscode-server/data/User/History/3a9908b8/b0lP.sh
+/home/osherarb/.vscode-server/data/User/History/-feb71eb/8duP.sh
+/home/osherarb/.vscode-server/data/User/History/-6345b59c/xc0y.sh
+/home/osherarb/.vscode-server/data/User/History/-718cb227/HGGU.sh
+/home/osherarb/.vscode-server/data/User/History/-718cb227/jmkw.sh
+/home/osherarb/.vscode-server/data/User/History/-718cb227/xvbq.sh
+/home/osherarb/.vscode-server/extensions/ms-python.debugpy-2025.4.0-linux-x64/bundled/libs/debugpy/_vendored/pydevd/pydevd_attach_to_process/linux_and_mac/compile_linux.sh
+/home/osherarb/.vscode-server/extensions/ms-python.debugpy-2025.4.0-linux-x64/bundled/libs/debugpy/_vendored/pydevd/pydevd_attach_to_process/linux_and_mac/compile_mac.sh
+/home/osherarb/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-x64/bundled/libs/debugpy/_vendored/pydevd/pydevd_attach_to_process/linux_and_mac/compile_linux.sh
+/home/osherarb/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-x64/bundled/libs/debugpy/_vendored/pydevd/pydevd_attach_to_process/linux_and_mac/compile_mac.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/node_modules/jschardet/scripts/show-size-changes.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/node_modules/jschardet/scripts/run-workflow.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/out/vs/base/node/ps.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/out/vs/base/node/cpuUsage.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/git/dist/git-editor.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/git/dist/askpass.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/git/dist/askpass-empty.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/git/dist/git-editor-empty.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/git/dist/ssh-askpass-empty.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/git/dist/ssh-askpass.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/terminal-suggest/fixtures/shell-parser/primaryExpressions/input.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/terminal-suggest/fixtures/shell-parser/multipleStatements/input.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/terminal-suggest/fixtures/shell-parser/basic/input.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/terminal-suggest/fixtures/shell-parser/variables/input.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/terminal-suggest/scripts/clone-fig.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/terminal-suggest/scripts/update-specs.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/ms-vscode.js-debug/src/targets/node/terminateProcess.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/bin/helpers/browser.sh
+/home/osherarb/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/bin/helpers/check-requirements.sh
+/home/osherarb/BASHSCRIPS2/script_1_iterateFiles.sh
+/home/osherarb/BASHSCRIPS2/script_2_Method.sh
+/home/osherarb/pythonDockerApp/pychartRunner.sh
+/home/osherarb/BASHSCRIPT2/script_1_iterateFiles.sh
+/home/osherarb/BASHSCRIPT2/script_3_install.sh
+/home/osherarb/BASHSCRIPT2/script_2_Method.sh
+/home/osherarb/BASHSCRIPT2/script_4_CSV.sh
+/home/osherarb/my_project/commit.sh
+/home/osherarb/.local/lib/python3.12/site-packages/bleach/_vendor/vendor_install.sh
+/home/osherarb/.local/lib/python3.12/site-packages/pexpect/bashrc.sh
+/home/osherarb/LinuxScripts/HW1_Q2/updater.sh
+/home/osherarb/LinuxScripts/HW1_Q3/updater.sh
+/home/osherarb/LinuxScripts/HW1_Q1/combined.sh
