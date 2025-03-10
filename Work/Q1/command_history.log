@@ -1,0 +1,106 @@
+    1  wget -P DOWNLOADS https://github.com/Telhai-Git/LINUX_COURSE_WORK/archive/refs/t
+    2  ags/downloads.tar.gz
+    3  wget -P DOWNLOADS https://github.com/Telhai-Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+    4  tar -xzvf DOWNLOADS/downloads.tar.gz -C DOWNLOADS
+    5  git add .
+    6  git commit  -m "Our first commit"
+    7  rm DOWNLOADS/downloads.tar.gz
+    8  git checkout -b BR_Q1
+    9  find ./DOWNLOADS -type f \( -name "*.py" \) -exec cp {} ./CODE/ \;
+   10  find DOWNLOADS -type f \( -name "*.jpg" -o -name "*.csv" -o -name "*.txt" \) -exec cp {} DATA/ \;
+   11  touch Work/Q1/q1_output.txt
+   12  echo "Time : $(date)" >> Work/Q1/q1_output.txt
+   13  echo "USER DETAILS: $(grep $(whoami) /etc/passwd)" >> Work/Q1/q1_output.txt
+   14  echo "REPO: $(pwd)" >> Work/Q1/q1_output.txt
+   15  echo "GithubUrl: $(git remote get-url origin 2>/dev/null || echo "No remote set")" >> Work/Q1/q1_output.txt
+   16  echo "VERSIONID: $(grep '^VERSION_ID' /etc/os-release | cut -d'=' -f2)" >> Work/Q1/q1_output.txt
+   17  echo "---------------------------------------------" >> Work/Q1/q1_output.txt
+   18  echo "{ Installing tree package and listing all files in recursive mode }" >> Work/Q1/q1_output.txt
+   19  if ! command -v tree &> /dev/null; then     echo "Installing tree package...";     sudo apt-get install -y tree; fi
+   20  tree . 2>&1 | tee -a Work/Q1/q1_output.txt
+   21  echo "---------------------------------------------" >> Work/Q1/q1_output.txt
+   22  echo "List of all my .sh files under user folder recursively" >> Work/Q1/q1_output.txt
+   23  find ~ -type f -name "*.sh" >> Work/Q1/q1_output.txt
+   24  echo "Script execution completed successfully!"
+   25  touch Work/Q1/generate_q1_output.sh
+   26  chmod +x Work/Q1/generate_q1_output.sh
+   27  git add .
+   28  git commit -m "Finished EX1"
+   29  git branch
+   30  git checkout main
+   31  git merge BR_Q1
+   32  git checkout BR_Q1
+   33  git log --oneline --graph --all | tee /Work/Q1/git_commits.log
+   34  git log --oneline --graph --all | tee Work/Q1/git_commits.log
+   35  history > Work/Q1/command_history.log
+   36  git add .
+   37  git commit -m "Add history and commits log"
+   38  git checkout main
+   39  git merge BR_Q1 
+   40  git push origin main BR_Q1
+   41  mkdir -p LINUX_Course_Project/{DOWNLOADS,CODE,DATA,BACKUPS,Work/Q{1..5}}
+   42  cd LINUX_Course_Project/
+   43  git init
+   44  git branch -M main
+   45  git remote add origin https://github.com/Matanahmany/Linux_Course_project.git
+   46  code .
+   47     24  cd Work/Q2
+   48  history
+   49  sudo apt install python3-matplotlib
+   50  apt list -i
+   51  apt list -i python3*
+   52  python -m ensurepip --default-pip
+   53  python -m pip install --upgrade pip
+   54  sudo apt update
+   55  sudo apt install --reinstall python3-pip
+   56  pip3 --version
+   57  sudo apt --fix-broken install
+   58  sudo dpkg --configure -a
+   59  python3 --version
+   60  pip3 --version
+   61  pip3 install --user pipreqs
+   62  cd ../../
+   63  rm -r
+   64  cd ..
+   65  rm -r LINUX_Course_Project/
+   66  ls
+   67  rm  LINUX_Course_Project/
+   68  rm LINUX_Course_Project/
+   69  ls
+   70  cd LINUX_Course_Project/
+   71  git branch
+   72  code .
+   73  git init
+   74  git branch -M main
+   75  git remote add origin https://github.com/Matanahmany/PROJECT_COURSE_LINUX.git
+   76  wget -P DOWNLOADS https://github.com/Telhai-Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+   77  tar -xzvf DOWNLOADS/downloads.tar.gz -C DOWNLOADS
+   78  git add .
+   79  git commit -m "Our first commit"
+   80  rm DOWNLOADS/downloads.tar.gz
+   81  git checkout -b BR_Q1
+   82  find ./DOWNLOADS -type f \( -name "*.py" \) -exec cp {} ./CODE/ \;
+   83  find DOWNLOADS -type f \( -name "*.jpg" -o -name "*.csv" -o -name "*.txt" \) -exec cp {} DATA/ \;
+   84  touch Work/Q1/q1_output.txt
+   85  echo "Time : $(date)" >> Work/Q1/q1_output.txt
+   86  echo "USER DETAILS: $(grep $(whoami) /etc/passwd)" >> Work/Q1/q1_output.txt
+   87  echo "REPO: $(pwd)" >> Work/Q1/q1_output.txt
+   88  echo "GithubUrl: $(git remote get-url origin 2>/dev/null || echo "No remote set")" >> Work/Q1/q1_output.txt
+   89  echo "VERSIONID: $(grep '^VERSION_ID' /etc/os-release | cut -d'=' -f2)" >> Work/Q1/q1_output.txt
+   90  echo "---------------------------------------------" >> Work/Q1/q1_output.txt
+   91  echo "{ Installing tree package and listing all files in recursive mode }" >> Work/Q1/q1_output.txt
+   92  if ! command -v tree &> /dev/null; then     echo "Installing tree package...";     sudo apt-get install -y tree; fi
+   93  tree . 2>&1 | tee -a Work/Q1/q1_output.txt
+   94  echo "---------------------------------------------" >> Work/Q1/q1_output.txt
+   95  echo "List of all my .sh files under user folder recursively" >> Work/Q1/q1_output.txt
+   96  find ~ -type f -name "*.sh" >> Work/Q1/q1_output.txt
+   97  touch Work/Q1/generate_q1_output.sh
+   98  chmod +x Work/Q1/generate_q1_output.sh
+   99  git add .
+  100  git commit -m "Finished EX1"
+  101  git branch
+  102  git checkout main
+  103  git merge BR_Q1
+  104  git checkout BR_Q1
+  105  git log --oneline --graph --all | tee Work/Q1/git_commits.log
+  106  history > Work/Q1/command_history.log
