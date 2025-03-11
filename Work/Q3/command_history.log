@@ -1,0 +1,21 @@
+    1  git checkout -b BR_Q3
+    2  cd Work/Q3
+    3  touch menu.sh
+    4  chmod +X menu.sh
+    5  history > command_history.log
+    1  git checkout -b BR_Q3
+    2  cd Work/Q3
+    3  touch menu.sh
+    4  chmod +X menu.sh
+    5  history > command_history.log
+    6  ./menu.sh 
+    7  chmod +x menu.sh
+    8  clear
+    9  ./menu.sh 
+   10  clear
+   11  ./menu.sh 
+   12  clear
+   13  ./menu.sh
+   14  clear
+   15  ./menu.sh
+   16  history >> command_history.log
