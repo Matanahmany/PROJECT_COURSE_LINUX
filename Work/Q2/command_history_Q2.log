@@ -1,0 +1,37 @@
+    1  git branch
+    2  git checkout -b BR_Q2
+    3  cp CODE/plant.py Work/Q2/
+    4  cd ..
+    5  python3 -m venv venv_matan_osher
+    6  source venv_matan_osher/bin/activate
+    7  cd LINUX_Course_Project/
+    8  cd Work/Q2
+    9  pip install -r requirements.txt
+   10  pip install matplotlib
+   11  python3 ./plant.py
+   12  mkdir -p Diagrams_1
+   13  mv *.png  ./Diagrams_1/
+   14  tar -czvf ~/LINUX_Course_Project/BACKUPS/Diagrams_1_$(date +"%Y-%m-%d_%H-%M-%S").tar.gz -C ~/LINUX_Course_Project/Work/Q2 Diagrams_1
+   15  deactivate
+   16  cd ../../
+   17  git add .
+   18  git commit -m "finish ex2.1"
+   19  git checkout main
+   20  git merge BR_Q2
+   21  git push origin main BR_Q2
+   22  cd Work/Q2
+   23  git checkout BR_Q2
+   24  touch plant2.py
+   25  chmod +x plant2.py
+   26  source ~/venv_matan_osher/bin/activate
+   27  pip install pipreqs
+   28  python -m pipreqs.pipreqs --force
+   29  pip uninstall matplotlib pipreqs
+   30  pip install -r requirements.txt
+   31  python ./plant2.py --plant "Rose" --height 1 2 3 4 5 --leaf_count 5 10 15 20 25 --dry_weight 2.0
+   32  python ./plant2.py --plant "Rose" --height 1 2 3 4 5 --leaf_count 5 10 15 20 25 --dry_weight 2.0 2.1 2.2 2.3 3.5
+   33  deactivate
+   34  mkdir -p Diagrams_2
+   35  mv *.png Diagrams_2
+   36  tar -czvf ~/LINUX_Course_Project/BACKUPS/Diagrams_2_$(date +"%Y-%m-%d_%H-%M-%S").tar.gz -C ~/LINUX_Course_Project/Work/Q2 Diagrams_2
+   37  history > command_history_Q2.log
