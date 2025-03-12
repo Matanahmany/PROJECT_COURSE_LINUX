@@ -175,3 +175,93 @@ Processing completed: 2 out of 2 plants successfully processed.
 ========================================
 Deactivating virtual environment...
 Virtual environment deactivated.
+========================================
+Script started at: Wed Mar 12 21:10:24 IST 2025
+========================================
+Using CSV file: ../Q3/myFile.csv
+Activating virtual environment...
+Virtual environment activated.
+Upgrading pip...
+Installing dependencies from requirements.txt...
+Requirement already satisfied: matplotlib==3.10.1 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from -r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (3.10.1)
+Requirement already satisfied: contourpy>=1.0.1 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (4.56.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (1.4.8)
+Requirement already satisfied: numpy>=1.23 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (2.2.3)
+Requirement already satisfied: packaging>=20.0 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (24.2)
+Requirement already satisfied: pillow>=8 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (11.1.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (3.2.1)
+Requirement already satisfied: python-dateutil>=2.7 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from python-dateutil>=2.7->matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (1.17.0)
+Validating installed dependencies...
+Processing plant: rose
+Plant: rose
+Height data: [1.0, 2.0] cm
+Leaf count data: [3, 4]
+Dry weight data: [5.0, 6.0] g
+Generated plots for rose:
+Scatter plot saved as rose_scatter.png
+Histogram saved as rose_histogram.png
+Line plot saved as rose_line_plot.png
+Processing of rose completed successfully.
+Processing plant: Tulip
+Plant: Tulip
+Height data: [1.0, 10.0] cm
+Leaf count data: [2, 25]
+Dry weight data: [3.0, 14.0] g
+Generated plots for Tulip:
+Scatter plot saved as Tulip_scatter.png
+Histogram saved as Tulip_histogram.png
+Line plot saved as Tulip_line_plot.png
+Processing of Tulip completed successfully.
+========================================
+Processing completed: 2 out of 2 plants successfully processed.
+========================================
+Deactivating virtual environment...
+Virtual environment deactivated.
+========================================
+Script started at: Wed Mar 12 21:10:59 IST 2025
+========================================
+Using CSV file: ../Q3/myFile.csv
+Activating virtual environment...
+Virtual environment activated.
+Upgrading pip...
+Installing dependencies from requirements.txt...
+Requirement already satisfied: matplotlib==3.10.1 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from -r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (3.10.1)
+Requirement already satisfied: contourpy>=1.0.1 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (4.56.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (1.4.8)
+Requirement already satisfied: numpy>=1.23 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (2.2.3)
+Requirement already satisfied: packaging>=20.0 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (24.2)
+Requirement already satisfied: pillow>=8 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (11.1.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (3.2.1)
+Requirement already satisfied: python-dateutil>=2.7 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in /home/osherarb/venv_matan_osher/lib/python3.12/site-packages (from python-dateutil>=2.7->matplotlib==3.10.1->-r /home/osherarb/LINUX_Course_Project/Work/Q2/requirements.txt (line 1)) (1.17.0)
+Validating installed dependencies...
+Processing plant: rose
+Plant: rose
+Height data: [1.0, 2.0] cm
+Leaf count data: [3, 4]
+Dry weight data: [5.0, 6.0] g
+Generated plots for rose:
+Scatter plot saved as rose_scatter.png
+Histogram saved as rose_histogram.png
+Line plot saved as rose_line_plot.png
+Processing of rose completed successfully.
+Processing plant: Tulip
+Plant: Tulip
+Height data: [1.0, 10.0] cm
+Leaf count data: [2, 25]
+Dry weight data: [3.0, 14.0] g
+Generated plots for Tulip:
+Scatter plot saved as Tulip_scatter.png
+Histogram saved as Tulip_histogram.png
+Line plot saved as Tulip_line_plot.png
+Processing of Tulip completed successfully.
+========================================
+Processing completed: 2 out of 2 plants successfully processed.
+========================================
+Deactivating virtual environment...
+Virtual environment deactivated.

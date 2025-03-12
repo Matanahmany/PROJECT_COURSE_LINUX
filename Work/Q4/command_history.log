@@ -1,0 +1,24 @@
+    1  git checkout -b BR_Q4
+    2  cd Work/Q4
+    3  touch process_csv.ch
+    4  chmod +x process_csv.sh
+    5  touch process_csv.sh
+    6  chmod +x process_csv.sh
+    7  rm process_csv.ch
+    8  ./process_csv.sh ../Q3/myFile.csv
+    9  touch nearFile.csv
+   10  ./process_csv.sh ../fmfk.csv
+   11  ./process_csv.sh
+   12  tar -czvf ../../BACKUPS/Diagrams_$(date +"%Y-%m-%d_%H-%M-%S").tar.gz -C ./Diagrams .
+   13  cd ../../
+   14  git add .
+   15  git commit -m "ex4.1 -  before update BASH"
+   16  git branch
+   17  cd Work/Q4
+   18  rm -r Diagrams
+   19  touch process_csv_v2.sh
+   20  chmod +x process_csv_v2.sh
+   21  clear
+   22  ./process_csv_v2.sh --csv ../Q3/myFile.csv
+   23  ./process_csv_v2.sh -c ../Q3/myFile.csv
+   24  history > command_history.log
