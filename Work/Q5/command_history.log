@@ -1,0 +1,24 @@
+    1  cd Work/Q5
+    2  touch WatermarkAdder.java
+    3  chmod +x WatermarkAdder.java
+    4  sudo apt update
+    5  sudo apt install openjdk-17-jdk
+    6  javac WatermarkAdder.java
+    7  jar cfe WatermarkAdder.jar WatermarkAdder WatermarkAdder.class
+    8  mkdir -p Ex3_pictures 
+    9  rm -r Ex3_pictures/
+   10  mkdir -p Ex3_pictures 
+   11  java -jar WatermarkAdder.jar Ex5_2_pictures/
+   12  touch Dockerfile.java
+   13  touch run_pipeline.sh
+   14  chmod +x run_pipeline.sh
+   15  ./run_pipeline.sh --plant "rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+   16  ./run_pipeline.sh --plant "Tulip" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+   17  clear
+   18  docker ps
+   19  build -t plant2-image -f Dockerfile.python ../
+   20  docker build -t plant2-image -f Dockerfile.python ../
+   21  docker build -t watermark-app -f Dockerfile.java .
+   22  clear
+   23  ./run_pipeline.sh --plant "Tulip" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+   24  history > command_history.log
