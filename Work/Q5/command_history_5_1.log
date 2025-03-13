@@ -1,0 +1,419 @@
+    1  code .
+    2  wget -P DOWNLOADS https://github.com/Telhai-Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+    3  clear
+    4  mkdir -p LINUX_Course_Project/{DOWNLOADS,CODE,DATA,BACKUPS,Work/Q{1..4}}
+    5  cd LINUX_Course_Project
+    6  code .
+    7  cd Work/Q4
+    8  rm -r Diagrams
+    9  cd ..
+   10  git branch
+   11  git checkout -b BR_Q5
+   12  cd Q5
+   13  touch Dockerfile
+   14  docker build -t plant-container .
+   15  docker --version
+   16  docker build -t plant-container .
+   17  docker --version
+   18  docker build -t plant-container .
+   19  ls -l ../../CODE/plant.py
+   20  pwd
+   21  docker build -t plant-container ../../
+   22  docker build -t plant-container -f Dockerfile ../../
+   23  docker run -it --name plant-runner plant-container
+   24  nano /app/plant.py
+   25  python3 /app/plant.py
+   26  python /app/plant.py
+   27  python3 /app/plant.py
+   28  docker run --name plant-runner plant-container
+   29  ls
+   30  python3 /app/plant.py
+   31  docker run -it --name plant-runner plant-container
+   32  docker run -it  plant-runner plant-container
+   33  docker run -it plant-runner plant-container
+   34  docker run -itplant-container
+   35  docker run -it plant-container
+   36  ךד
+   37  ls
+   38  docker run -it plant-container
+   39  docker run -it plant-container /bin/bash
+   40  docker run -it --name my_container ubuntu:latest /bin/bash
+   41  docker run -it -- my_container ubuntu:latest /bin/bash
+   42  docker run -it -- my_container /bin/bash
+   43  docker run -it my_container /bin/bash
+   44  docker run -it my_container 
+   45  docker run -it --name First_container ubuntu:latest /bin/bash
+   46  docker run -it First_container 
+   47  docker run -it First_container ubuntu:latest /bin/bash
+   48  docker run -it First_container /bin/bash
+   49  docker start -i First_container
+   50  docker cp ~/LINUX_Course_Project/CODE/plant.py First_container:/app/plant.py
+   51  docker exec -it First_container mkdir -p /app
+   52  docker cp ~/LINUX_Course_Project/CODE/plant.py First_container:/app/plant.py
+   53  ךד
+   54  Ls
+   55  ls
+   56  docker cp First_container:/app/docker cp First_container:/app/reversed_collage.png ~/LINUX_Course_Project/Work/Q5/
+   57  *.png ~/LINUX_Course_Project/Work/Q5/
+   58  docker cp First_container:/app/reversed_collage.png ~/LINUX_Course_Project/Work/Q5/
+   59  docker cp First_container:/app/combined_diagram.png ~/LINUX_Course_Project/Work/Q5/
+   60  docker cp First_container:/app/{reversed_collage.png,combined_diagram.png,container_history.log} ~/LINUX_Course_Project/Work/Q5/
+   61  docker cp First_container:/app/reversed_collage.png ~/LINUX_Course_Project/Work/Q5/
+   62  docker cp First_container:/app/combined_diagram.png ~/LINUX_Course_Project/Work/Q5/
+   63  docker cp First_container:/app/container_history.log ~/LINUX_Course_Project/Work/Q5/
+   64  history > command_history.log
+   65  cd Work/Q5
+   66  history > command_history.log
+   67  cd ../../
+   68  git add . 
+   69  git commit -m "ex5.1"
+   70  git checkout master
+   71  git merge BR_Q5
+   72  git push origin master BR_Q5
+   73  clear
+   74  touch Dockerfile
+   75  cd Work/Q5
+   76  docker run --name First_container plant-container --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0 ../
+   77  docker run --name second_container plant-container --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0 ../
+   78  docker run --name second_container plant-container2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0 ../
+   79  docker build -t plant-container2 ../
+   80  docker build -t plant-container2 -f Dockerfile ../
+   81  docker run --name second_container plant-container2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0 
+   82  docker run --name EX5_2_container plant-container2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0 
+   83  docker start -i EX5_2_container
+   84  docker start -it EX5_2_container
+   85  docker start -t EX5_2_container
+   86  docker start -i EX5_2_container
+   87  docker run -i EX5_2_container
+   88  docker run -it EX5_2_container
+   89  docker run -t EX5_2_container
+   90  docker run -it plant-container2 /bin/bash
+   91  docker run plant-container2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0 
+   92  docker run plant-container2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0 /bin/bash
+   93  docker run plant-container2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+   94  docker exec -it plan-conainer2 ls -l /app
+   95  docker exec -it plant-conainer2 ls -l /app
+   96  docker exec -it plant-container2 ls -l /app
+   97  docker exec -it plant-container2 /bin/bash
+   98  docker ps
+   99  docker ps -a
+  100  docker start plant-container2
+  101  docker exec -it plant-container2 ls -l /app
+  102  docker exec -it plant-container2 /bin/bash
+  103  docker start -ai plant-container2
+  104  docker exec -it plant_container2 ls -l /app
+  105  docker cp plant_container2:/app/. ~/LINUX_Course_Project/Work/Q5/
+  106  docker run plant-container2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  107  docker cp plant-container2:/app/. ~/LINUX_Course_Project/Work/Q5/
+  108  docker run -it  plant-container2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  109  docker cp plant-container2:/app/. ~/LINUX_Course_Project/Work/Q5/
+  110  docker run -i plant-container2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  111  docker cp plant-container2:/app/. ~/LINUX_Course_Project/Work/Q5/
+  112  docker run -it --name second_container plant-image2 /bin/bash
+  113  docker run -it EX5_2_container /bin/bash
+  114  docker start -i EX5_2_container /bin/bash
+  115  ls
+  116  docker images
+  117  docker start -i plant-container2 /bin/bash
+  118  docker start -i plant-container2
+  119  docker start -it plant-container2
+  120  docker run -it plant-container2
+  121  docker ps -q | xargs docker kill
+  122  docker ps -aq | xargs docker rm -f
+  123  docker ps -a 
+  124  docker rmi -f $(docker images -q)
+  125  docker build -t plant-image2 -f Dockerfile ../
+  126  docker build -t --name plant-image2 -f Dockerfile ../
+  127  docker run -rm --name plant2-container plant-image2 --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0 iner2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 4 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0 
+  128  clear
+  129  docker build -t plant2-container .
+  130  docker build -t plant2-container ../
+  131  docker build -t plant2-container .
+  132  docker build -t plant2-container -f Dockerfile ../
+  133  docker run --rm -it plant2-container
+  134  docker run --rm -it plant2-container /bin/bash
+  135  docker run --rm -it plant2-container --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0 iner2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  136  docker run --rm -it plant2-container --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  137  docker run --rm -it plant2-container /bin/bash
+  138  [200~docker run --rm -it --entrypoint /bin/bash plant2-container
+  139  docker run --rm -it --entrypoint /bin/bash plant2-container
+  140  clear
+  141  docker build -it osherDocker -f Dockerfile ../
+  142  docker build -t osherDocker -f Dockerfile ../
+  143  docker build -t osherdocker -f Dockerfile ../
+  144  docker run -rm --name osher_container osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0 iner2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0 
+  145  docker run -rm --name osher_container osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0 
+  146  docker run --rm --name osher_container osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0 
+  147  docker run --rm -it --entrypoint /bin/bash osher_container
+  148  docker run --rm -it --entrypoint /bin/bash osherdocker
+  149  docker run --rm -it --entrypoint /bin/bash osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  150  clear
+  151  docker run --rm -it osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  152  docker run -it --entrypoint /bin/bash osherdocker
+  153  docker run --rm -it -v $(pwd)/output:/app/output osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  154  mkdir -p ~/docker_output
+  155  docker run --rm -it -v ~/docker_output:/app osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  156  docker run -it --entrypoint /bin/bash osherdocker
+  157  docker run --name osher_container osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  158  docker run -it --entrypoint /bin/bash osherdocker
+  159  docker ps
+  160  docker run --rm --name osher_container -v /mnt/wsl/output:/app/output osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  161  docker run --rm osher_container -v /mnt/wsl/output:/app/output osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  162  docker run --rm --name osher_container2 -v /mnt/wsl/output:/app/output osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  163  ls /mnt/wsl/output
+  164  cd ~
+  165  cd ..
+  166  ls
+  167  cd ~
+  168  ls
+  169  docker run --rm --name osher_container2 -v /mnt/wsl/output:/app/output osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  170  docker run -it --entrypoint /bin/bash osherdocker
+  171  docker run  --name osher_container2 -v /mnt/wsl/output:/app/output osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  172  docker images
+  173  docker ps
+  174  docker run -it --entrypoint /bin/bash osherdocker
+  175  cd LINUX_Course_Project/
+  176  cd Work/Q5
+  177  docker run --rm --name osher_container -v ~/LINUX_Course_Project/Work/Q5:/app osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  178  docker run --rm --name osher_container5 -v ~/LINUX_Course_Project/Work/Q5:/app osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  179  docker run --rm --name osher_container5 -v ~/LINUX_Course_Project/Work/Q5:/app osherdocker2 --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  180  docker images
+  181  docker run --rm --name osher_container5 -v ~/LINUX_Course_Project/Work/Q5:/app osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  182  docker run --rm --name osher_container5 -v ~/LINUX_Course_Project/Work/Q5:/app/Q5 osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  183  ls
+  184  docker run --rm -it --name osher_container5 -v ~/LINUX_Course_Project/Work/Q5:/app osherdocker /bin/bash
+  185  docker ps -a
+  186  docker rm -f $(docker ps -aq)
+  187  docker rmi -f $(docker images -aq)
+  188  docker build -i plant-image2 -f Dockerfile ../
+  189  clear
+  190  docker build -t plant-image2 -f Dockerfile ../
+  191  docker run -it --name second_container -v ~/LINUX_Course_Project/Work/Q5:/app plant-image2 --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  192  docker build -t plant-image2 -f Dockerfile ../
+  193  matanahmany8@DESKTOP-LDKHH57:~/LINUX_Course_Project/Work/Q5$ docker build -t plant-image2 -f Dockerfile ../
+  194  [+] Building 0.7s (9/10)                                                                                                                  docker:default
+  195  ------
+  196  Dockerfile:9
+  197  --------------------
+  198  ERROR: failed to solve: failed to compute cache key: failed to calculate checksum of ref e1d0682i7aa4i28f0cqvopsgm::j4smg9ze8jof3r9rbb2ap0g52: "/home/matanahmany8/LINUX_Course_Project/Work/Q2/plant2.py": not found
+  199  ls -l /home/matanahmany8/LINUX_Course_Project/Work/Q2/plant2.py
+  200  ls -l /home/matanahmany8/LINUX_Course_Project/Work/Q2/requirements.txt
+  201  docker build -t plant-image2 .
+  202  docker builder prune -f
+  203  docker build --no-cache -t plant-image2 .
+  204  ls -l ~/LINUX_Course_Project/Work/Q2/plant2.py
+  205  ls -l ~/LINUX_Course_Project/Work/Q2/requirements.txt 
+  206  cd ..
+  207  docker build -t plant-image2 -f Q5/Dockerfile .
+  208  docker builder prune -f
+  209  docker build --no-cache -t plant-image2 .
+  210  docker build -t plant-image2 -f Q5/Dockerfile .
+  211  docker run -it --name second_container plant-image2 /bin/bash
+  212  docker run -it --name second_container -v ~/LINUX_Course_Project/Work/Q5:/app plant-image2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  213  docker run -it --name second_container55 -v ~/LINUX_Course_Project/Work/Q5:/app plant-image2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  214  docker run -it --name second_container55 -v /home/matanahmany8/LINUX_Course_Project/Work/Q5:/app plant-image2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  215  docker run -it --name second_container55 -v /home/matanahmany8/LINUX_Course_Project/Work/Q5/Output:/app plant-image2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  216  docker run -it second_container55 -v /home/matanahmany8/LINUX_Course_Project/Work/Q5/Output:/app plant-image2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  217  docker run -it --name second_container555 -v /home/matanahmany8/LINUX_Course_Project/Work/Q5/Output:/app plant-image2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  218  docker run --rm --name osher_cont plant-image2 --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  219  docker run -d --name osher_cont5 plant-image2 --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  220  docker run -v --name osher_cont5 plant-image2 --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  221  docker run --rm -it --entrypoint /bin/bash second_container
+  222  docker run -it --entrypoint /bin/bash osher_cont
+  223  docker run -it --entrypoint /bin/bash osher_cont5
+  224  docker run --rm -it --entrypoint /bin/bash osher_cont5
+  225  docker build -t plant-image2 -f Q5/Dockerfile .
+  226  cd Work/Q5
+  227  docker run --rm --name osher_container osherdocker --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  228  docker ps
+  229  docker images
+  230  docker build -t plant-image2 -f Dockerfile ../
+  231  docker info
+  232  wsl --shutdown
+  233  docker build -t plant-image2 -f Dockerfile ../
+  234  docker build -t plant-image-example -f Dockerfile ../
+  235  cd Work/Q5
+  236  docker build -t plant-image-example -f Dockerfile ../
+  237  docker run -it --name second_container-example -v ~/LINUX_Course_Project/Work/Q5:/app plant-image2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  238  docker run -it --name debug_container plant-image2 /bin/bash
+  239  docker run -it --name debug_container plant-image2-example /bin/bash
+  240  docker build -t plant-image-example -f Dockerfile ../
+  241  docker run -it --name debug_container plant-image2-example /bin/bash
+  242  docker run -it --name second_container-example -v ~/LINUX_Course_Project/Work/Q5:/app plant-image2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  243  docker run -it --name second_container-example2 -v ~/LINUX_Course_Project/Work/Q5:/app plant-image2 --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  244  docker build -t plant-image .
+  245  clear
+  246  docker build -t plant2-image -f Dockerfile ../
+  247  docker volume create Ex5_2_pictures
+  248  docker run -v Ex5_2_pictures:/app plant2-image --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  249  docker run --rm -v Ex5_2_pictures:/app busybox ls /app
+  250  mkdir -p Ex2_files_host
+  251  docker cp $(docker create -v Ex5_2_pictures:/app busybox) :/app/Sunflower_histogram.png ./Ex2_files_host/Sunflower_histogram.png
+  252  docker cp $(docker create -v Ex5_2_pictures:/app busybox):/app/Sunflower_histogram.png ./Ex2_files_host/Sunflower_histogram.png
+  253  docker run --rm -v Ex5_2_pictures:/app -v $(pwd)/Ex2_files_host:/host busybox sh -c "cp /app/*.png /host/"
+  254  history > command_history_5_2.log
+  255  git add . 
+  256  cd ../../
+  257  git add . 
+  258  git commit -m "ex5.2"
+  259  git push BR_Q5
+  260  git push o
+  261  git add .
+  262  git status
+  263  git push origin master
+  264  git checkout BR_Q5
+  265  cd Work/Q5
+  266  mkdir -p JavaApp
+  267  cd JavaApp/
+  268  cd ..
+  269  tocuh WatermarkAdder.java
+  270  touch WatermarkAdder.java
+  271  chmod +x WatermarkAdder.java
+  272  javac WatermarkAdder.java
+  273  jar cfe WatermarkAdder.jar WatermarkAdder WatermarkAdder.class
+  274  java -jar WatermarkAdder.jar combined_diagram.png output.png "Student Name - 123456789"
+  275  javac WatermarkAdder.java
+  276  sudo apt update
+  277  sudo apt install openjdk-17-jdk
+  278  javac WatermarkAdder.java
+  279  jar cfe WatermarkAdder.jar WatermarkAdder WatermarkAdder.class
+  280  java -jar WatermarkAdder.jar combined_diagram.png output.png "Student Name - 123456789"
+  281  javac WatermarkAdder.java
+  282  jar cfe WatermarkAdder.jar WatermarkAdder WatermarkAdder.class
+  283  java -jar WatermarkAdder.jar Ex2_files_host Ex3_files "Student Name - 123456789"
+  284  java -jar WatermarkAdder.jar Ex2_files_host Ex3_files "Matan Nahmany - 206435737 && Osher Arbili 207372152"
+  285  javac WatermarkAdder.java
+  286  jar cfe WatermarkAdder.jar WatermarkAdder WatermarkAdder.class
+  287  mkdir -p Ex3_files
+  288  java -jar WatermarkAdder.jar Ex2_files_host Ex3_files "Matan Nahmany 206435737 && Osher Arbili 207372152"
+  289  javac WatermarkAdder.java
+  290  jar cfe WatermarkAdder.jar WatermarkAdder WatermarkAdder.class
+  291  mkdir -p Ex3_files
+  292  java -jar WatermarkAdder.jar Ex2_files_host Ex3_files "Matan Nahmany 206435737 && Osher Arbili 207372152"
+  293  touch Dockerfile.java
+  294  touch run_pipeline.sh
+  295  chmod +x run_pipeline.sh 
+  296  ./run_pipeline.sh
+  297  clear
+  298  ./run_pipeline.sh --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  299  clear
+  300  ./run_pipeline.sh --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  301  touch Dockerfile.java
+  302  ./run_pipeline.sh --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  303  docker build -t watermark-app -f Dockerfile.java .
+  304  docker rmi watermark-app
+  305  docker build -t watermark-app -f Dockerfile.java .
+  306  docker rmi watermark-app
+  307  docker build -t watermark-app -f Dockerfile.java .
+  308  ./run_pipeline.sh --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  309  ./run_pipeline.sh --plant "rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  310  docker rmi watermark-app
+  311  docker rmi plant2-image
+  312  ./run_pipeline.sh --plant "rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  313  docker rmi plant2-image
+  314  docker rmi watermark-app
+  315  ./run_pipeline.sh --plant "rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  316  docker rmi watermark-app
+  317  docker rmi plant2-image
+  318  ./run_pipeline.sh --plant "rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  319  java -jar WatermarkAdder.jar Ex2_pictures
+  320  javac WatermarkAdder.java
+  321  jar cfe WatermarkAdder.jar WatermarkAdder WatermarkAdder.class
+  322  java -jar WatermarkAdder.jar Ex2_pictures
+  323  javac WatermarkAdder.java
+  324  java -jar WatermarkAdder.jar Ex2_pictures
+  325  javac WatermarkAdder.java
+  326  java -jar WatermarkAdder.jar Ex2_pictures
+  327  jar cfe WatermarkAdder.jar WatermarkAdder WatermarkAdder.class
+  328  java -jar WatermarkAdder.jar Ex2_pictures
+  329  ./run_pipeline.sh --plant "rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  330  ./run_pipeline.sh --plant "suny" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 
+  331  ./run_pipeline.sh --plant "sun" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  332  ./run_pipeline.sh --plant "rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+  333  cd ..
+  334  ls
+  335  cd ~
+  336  ls
+  337  cd LINUX_Course_Project_example/
+  338  ls
+  339  git checkout -b BR_Q2
+  340  cp ../../CODE/plant.py .
+  341  git branch
+  342  sudo apt update
+  343  sudo apt install python3-pip python-is-python3
+  344  pip install matplotlib
+  345  ls
+  346  python ./plant.py 
+  347  mkdir -p Diagrams_1
+  348  mv *.png  ./Diagrams_1/
+  349  tar -czvf ../../BACKUPS/Diagrams_1_$(date +"%Y-%m-%d_%H-%M-%S").tar.gz Diagrams_1
+  350  tar -czvf ../../BACKUPS/Diagrams_1_$(date +"%Y-%m-%d_%H-%M-%S").tar.gz -C . Diagrams_1
+  351  ls
+  352  cd Diagrams_1/
+  353  ls
+  354  cd ..
+  355  ls
+  356  cd LINUX_Course_Project_example/
+  357  cd Work/Q2
+  358  python ./plant2.py --plant "Rose" --height 1 2 3 4 5 --leaf_count 5 10 15 20 25 --dry_weight 2.0 2.1 2.2 2.3 3.5
+  359  sudo apt install python-pip -y 
+  360  python ./plant2.py --plant "Rose" --height 1 2 3 4 5 --leaf_count 5 10 15 20 25 --dry_weight 2.0 2.1 2.2 2.3 3.5
+  361  sudo apt install python
+  362  python ./plant2.py --plant "Rose" --height 1 2 3 4 5 --leaf_count 5 10 15 20 25 --dry_weight 2.0 2.1 2.2 2.3 3.5
+  363  sudo apt update
+  364  sudo apt install python-is-python3
+  365  python ./plant2.py --plant "Rose" --height 1 2 3 4 5 --leaf_count 5 10 15 20 25 --dry_weight 2.0 2.1 2.2 2.3 3.5
+  366  cd ../../
+  367  code .
+  368  pip freeze | xargs pip uninstall -y
+  369  pip3 install --user pipreqs
+  370  python3 -m pipreqs.pipreqs --force
+  371  pip uninstall -y matplotlib
+  372  cd ..
+  373  ls
+  374  cd Work/Q2
+  375  pip freeze >requirements.txt 
+  376  sudo apt install python3-pip -y 
+  377  pip freeze >requirements.txt 
+  378  cd ..
+  379  ls
+  380  mkdir -p LINUX_Course_Project
+  381  git clone https://github.com/Matanahmany/PROJECT_COURSE_LINUX.git
+  382  cd LINUX_Course_Project
+  383  git clone https://github.com/Matanahmany/PROJECT_COURSE_LINUX.git
+  384  code .
+  385  la
+  386  ls
+  387  cd PROJECT_COURSE_LINUX/
+  388  code .
+  389  git checkout -b BR_Q3
+  390  cd Work/Q3
+  391  touch menu.sh
+  392  chmod +X menu.sh
+  393  history > command_history.log
+  394  ./menu.sh 
+  395  chmod +x menu.sh
+  396  clear
+  397  ./menu.sh 
+  398  clear
+  399  ./menu.sh 
+  400  clear
+  401  ./menu.sh
+  402  clear
+  403  ./menu.sh
+  404  history >> command_history.log
+  405  cd ../../
+  406  git add .
+  407  git commit -m "finish ex3"
+  408  git checkout main
+  409  git branch
+  410  git merge BR_Q3
+  411  git push origin main BR_Q3
+  412  clear
+  413  git checkout -b BR_Q5
+  414  cd Work/Q5
+  415  docker cp First_container:/app/reversed_collage.png /Work/Q5/
+  416  docker cp First_container:/app/reversed_collage.png Work/Q5/
+  417  docker cp First_container:/app/combined_diagram.png Work/Q5
+  418  docker cp First_container:/app/container_history.log Work/Q5
+  419  history > command_history_5_1.log
