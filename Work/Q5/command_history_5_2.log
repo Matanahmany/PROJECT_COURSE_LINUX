@@ -1,0 +1,8 @@
+    1  touch Dockerfile.python
+    2  docker build -t plant2-image -f Dockerfile.python ../
+    3  mkdir -p Ex5_2_pictures
+    4  docker volume create Ex5_2_pictures
+    5  docker run -v Ex5_2_pictures:/app plant2-image --plant "Sunflower" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.0 2.1 2.1 3.0
+    6  docker run --rm -v Ex5_2_pictures:/app busybox ls /app
+    7  docker run --rm -v Ex5_2_pictures:/app -v $(pwd)/Ex5_2_pictures:/host busybox sh -c "cp /app/*.png /host/"
+    8  history > command_history_5_2.log
